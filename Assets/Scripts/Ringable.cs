@@ -6,7 +6,4 @@ public abstract class Ringable : MonoBehaviour
 {
 
     public abstract void Ring();
-
-    
-    
 }
