@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-public class StandardBirdRing : Ringable
+public class StandardBirdRing : MonoBehaviour, IRingable
 {
 
     [SerializeField] private float dissipationTime = default;
@@ -77,7 +77,7 @@ public class StandardBirdRing : Ringable
     }
 
 
-    public override void Ring()
+    public void Ring()
     {
         shouldRing = true;
     }

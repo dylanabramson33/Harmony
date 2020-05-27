@@ -25,8 +25,6 @@ public class Gong : MonoBehaviour
 
     }
 
-
-
     void ProgpagateSoundWave()
     {
         waveObject.GetComponent<SpriteRenderer>().color = new Color(1,1,1 ,1 - currentCycleTime / dissipationTime);

@@ -8,8 +8,8 @@ public class Ring : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Ringable ringable = collision.gameObject.GetComponent<Ringable>();
-        if (ringable)
+        IRingable ringable = collision.gameObject.GetComponent<IRingable>();
+        if (ringable != null)
         {
             ringable.Ring();
         }

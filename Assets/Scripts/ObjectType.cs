@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Ringable : MonoBehaviour
+public enum ObjectType
 {
+    Water,
+    Bird,
 
-    public abstract void Ring();
+    
 }
